@@ -1,0 +1,518 @@
+#
+# Creating new log
+#
+5/28/2019 - 3:53:18 PM - [ERROR]System.IO.IOException: Unable to read data from the transport connection: An established connection was aborted by the software in your host machine. ---> System.Net.Sockets.SocketException: An established connection was aborted by the software in your host machine
+   at System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   at System.Net.Sockets.NetworkStream.EndRead(IAsyncResult asyncResult)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.EndRead(IAsyncResult asyncResult)
+   at MqttLib.Core.StreamManager.listen(IAsyncResult asyncResult) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Core\StreamManager.cs:line 97
+#
+# Creating new log
+#
+5/28/2019 - 4:12:56 PM - [DEBUG]Re-Sending - 1
+5/28/2019 - 4:12:57 PM - [ERROR]System.IO.IOException: Unable to read data from the transport connection: An established connection was aborted by the software in your host machine. ---> System.Net.Sockets.SocketException: An established connection was aborted by the software in your host machine
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at MqttLib.Core.Messages.MqttMessage.ReadCompleteBuffer(Stream str, Byte[] buffer) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Core\Messages\MqttMessage.cs:line 239
+   at MqttLib.Core.Messages.MqttMessage.ReadUshortFromStream(Stream str) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Core\Messages\MqttMessage.cs:line 221
+   at MqttLib.Core.Messages.MqttSubackMessage.ConstructFromStream(Stream str) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Core\Messages\MqttSubackMessage.cs:line 20
+   at MqttLib.Core.Messages.MqttMessage..ctor(Stream str, Byte header) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Core\Messages\MqttMessage.cs:line 99
+   at MqttLib.Core.Messages.MqttAcknowledgeMessage..ctor(Stream str, Byte header) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Core\Messages\MqttAcknowledgeMessage.cs:line 25
+   at MqttLib.Core.Messages.MqttSubackMessage..ctor(Stream str, Byte header) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Core\Messages\MqttSubackMessage.cs:line 12
+   at MqttLib.Core.Messages.MessageFactory.CreateMessage(Stream str, Byte header) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Core\Messages\MessageFactory.cs:line 38
+   at MqttLib.Core.StreamManager.listen(IAsyncResult asyncResult) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Core\StreamManager.cs:line 98
+#
+# Creating new log
+#
+5/28/2019 - 4:27:51 PM - [ERROR]MqttLib: Uncaught exception from user delegate: System.InvalidOperationException: Cross-thread operation not valid: Control 'Form1' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.get_InternalHandle()
+   at System.Windows.Forms.Control.get_CreateParams()
+   at System.Windows.Forms.Label.get_CreateParams()
+   at System.Windows.Forms.Control.SizeFromClientSize(Int32 width, Int32 height)
+   at System.Windows.Forms.Control.SizeFromClientSize(Size clientSize)
+   at System.Windows.Forms.Label.GetBordersAndPadding()
+   at System.Windows.Forms.Label.GetPreferredSizeCore(Size proposedConstraints)
+   at System.Windows.Forms.Control.GetPreferredSize(Size proposedSize)
+   at System.Windows.Forms.Label.GetPreferredSize(Size proposedSize)
+   at System.Windows.Forms.Control.get_PreferredSize()
+   at System.Windows.Forms.Label.AdjustSize()
+   at System.Windows.Forms.Label.OnTextChanged(EventArgs e)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at Speech_home.Form1.Client_PublishArrived(Object sender, PublishArrivedArgs e) in C:\Users\bibliotecar\source\repos\Speech_home\Speech_home\Form1.cs:line 101
+   at MqttLib.Mqtt.OnPublishArrived(MqttPublishMessage m) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Mqtt.cs:line 311
+5/28/2019 - 4:28:09 PM - [ERROR]MqttLib: Uncaught exception from user delegate: System.InvalidOperationException: Cross-thread operation not valid: Control 'checkBox1' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.SendMessage(Int32 msg, Int32 wparam, Int32 lparam)
+   at System.Windows.Forms.CheckBox.set_CheckState(CheckState value)
+   at System.Windows.Forms.CheckBox.set_Checked(Boolean value)
+   at Speech_home.Form1.Client_PublishArrived(Object sender, PublishArrivedArgs e) in C:\Users\bibliotecar\source\repos\Speech_home\Speech_home\Form1.cs:line 103
+   at MqttLib.Mqtt.OnPublishArrived(MqttPublishMessage m) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Mqtt.cs:line 311
+#
+# Creating new log
+#
+5/28/2019 - 4:29:16 PM - [ERROR]MqttLib: Uncaught exception from user delegate: System.InvalidOperationException: Cross-thread operation not valid: Control 'Form1' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.get_InternalHandle()
+   at System.Windows.Forms.Control.get_CreateParams()
+   at System.Windows.Forms.Label.get_CreateParams()
+   at System.Windows.Forms.Control.SizeFromClientSize(Int32 width, Int32 height)
+   at System.Windows.Forms.Control.SizeFromClientSize(Size clientSize)
+   at System.Windows.Forms.Label.GetBordersAndPadding()
+   at System.Windows.Forms.Label.GetPreferredSizeCore(Size proposedConstraints)
+   at System.Windows.Forms.Control.GetPreferredSize(Size proposedSize)
+   at System.Windows.Forms.Label.GetPreferredSize(Size proposedSize)
+   at System.Windows.Forms.Control.get_PreferredSize()
+   at System.Windows.Forms.Label.AdjustSize()
+   at System.Windows.Forms.Label.OnTextChanged(EventArgs e)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at Speech_home.Form1.Client_PublishArrived(Object sender, PublishArrivedArgs e) in C:\Users\bibliotecar\source\repos\Speech_home\Speech_home\Form1.cs:line 101
+   at MqttLib.Mqtt.OnPublishArrived(MqttPublishMessage m) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Mqtt.cs:line 311
+5/28/2019 - 4:29:27 PM - [ERROR]MqttLib: Uncaught exception from user delegate: System.InvalidOperationException: Cross-thread operation not valid: Control 'checkBox1' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.SendMessage(Int32 msg, Int32 wparam, Int32 lparam)
+   at System.Windows.Forms.CheckBox.set_CheckState(CheckState value)
+   at System.Windows.Forms.CheckBox.set_Checked(Boolean value)
+   at Speech_home.Form1.Client_PublishArrived(Object sender, PublishArrivedArgs e) in C:\Users\bibliotecar\source\repos\Speech_home\Speech_home\Form1.cs:line 103
+   at MqttLib.Mqtt.OnPublishArrived(MqttPublishMessage m) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Mqtt.cs:line 311
+5/28/2019 - 4:29:28 PM - [ERROR]System.IO.IOException: Unable to read data from the transport connection: An established connection was aborted by the software in your host machine. ---> System.Net.Sockets.SocketException: An established connection was aborted by the software in your host machine
+   at System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   at System.Net.Sockets.NetworkStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at MqttLib.Core.StreamManager.listen(IAsyncResult asyncResult) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Core\StreamManager.cs:line 100
+#
+# Creating new log
+#
+5/28/2019 - 4:33:08 PM - [ERROR]MqttLib: Uncaught exception from user delegate: System.InvalidOperationException: Cross-thread operation not valid: Control 'Form1' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.get_InternalHandle()
+   at System.Windows.Forms.Control.get_CreateParams()
+   at System.Windows.Forms.Label.get_CreateParams()
+   at System.Windows.Forms.Control.SizeFromClientSize(Int32 width, Int32 height)
+   at System.Windows.Forms.Control.SizeFromClientSize(Size clientSize)
+   at System.Windows.Forms.Label.GetBordersAndPadding()
+   at System.Windows.Forms.Label.GetPreferredSizeCore(Size proposedConstraints)
+   at System.Windows.Forms.Control.GetPreferredSize(Size proposedSize)
+   at System.Windows.Forms.Label.GetPreferredSize(Size proposedSize)
+   at System.Windows.Forms.Control.get_PreferredSize()
+   at System.Windows.Forms.Label.AdjustSize()
+   at System.Windows.Forms.Label.OnTextChanged(EventArgs e)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at Speech_home.Form1.Client_PublishArrived(Object sender, PublishArrivedArgs e) in C:\Users\bibliotecar\source\repos\Speech_home\Speech_home\Form1.cs:line 101
+   at MqttLib.Mqtt.OnPublishArrived(MqttPublishMessage m) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Mqtt.cs:line 311
+#
+# Creating new log
+#
+5/28/2019 - 4:35:00 PM - [ERROR]MqttLib: Uncaught exception from user delegate: System.InvalidOperationException: Cross-thread operation not valid: Control 'Form1' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.get_InternalHandle()
+   at System.Windows.Forms.Control.get_CreateParams()
+   at System.Windows.Forms.Label.get_CreateParams()
+   at System.Windows.Forms.Control.SizeFromClientSize(Int32 width, Int32 height)
+   at System.Windows.Forms.Control.SizeFromClientSize(Size clientSize)
+   at System.Windows.Forms.Label.GetBordersAndPadding()
+   at System.Windows.Forms.Label.GetPreferredSizeCore(Size proposedConstraints)
+   at System.Windows.Forms.Control.GetPreferredSize(Size proposedSize)
+   at System.Windows.Forms.Label.GetPreferredSize(Size proposedSize)
+   at System.Windows.Forms.Control.get_PreferredSize()
+   at System.Windows.Forms.Label.AdjustSize()
+   at System.Windows.Forms.Label.OnTextChanged(EventArgs e)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at Speech_home.Form1.Client_PublishArrived(Object sender, PublishArrivedArgs e) in C:\Users\bibliotecar\source\repos\Speech_home\Speech_home\Form1.cs:line 103
+   at MqttLib.Mqtt.OnPublishArrived(MqttPublishMessage m) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Mqtt.cs:line 311
+#
+# Creating new log
+#
+5/28/2019 - 4:35:57 PM - [ERROR]MqttLib: Uncaught exception from user delegate: System.InvalidOperationException: Cross-thread operation not valid: Control 'label3' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.set_WindowText(String value)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at Speech_home.Form1.Client_PublishArrived(Object sender, PublishArrivedArgs e) in C:\Users\bibliotecar\source\repos\Speech_home\Speech_home\Form1.cs:line 103
+   at MqttLib.Mqtt.OnPublishArrived(MqttPublishMessage m) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Mqtt.cs:line 311
+#
+# Creating new log
+#
+5/28/2019 - 4:36:46 PM - [ERROR]MqttLib: Uncaught exception from user delegate: System.InvalidOperationException: Cross-thread operation not valid: Control 'label3' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.set_WindowText(String value)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at Speech_home.Form1.Client_PublishArrived(Object sender, PublishArrivedArgs e) in C:\Users\bibliotecar\source\repos\Speech_home\Speech_home\Form1.cs:line 103
+   at MqttLib.Mqtt.OnPublishArrived(MqttPublishMessage m) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Mqtt.cs:line 311
+#
+# Creating new log
+#
+01.06.2019 - 21:28:44 - [ERROR]MqttLib: Uncaught exception from user delegate: System.InvalidOperationException: Cross-thread operation not valid: Control 'label3' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.set_WindowText(String value)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at Speech_home.Form1.Client_PublishArrived(Object sender, PublishArrivedArgs e) in C:\Users\bibliotecar\source\repos\Speech_home\Speech_home\Form1.cs:line 101
+   at MqttLib.Mqtt.OnPublishArrived(MqttPublishMessage m) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Mqtt.cs:line 311
+01.06.2019 - 21:29:01 - [ERROR]MqttLib: Uncaught exception from user delegate: System.InvalidOperationException: Cross-thread operation not valid: Control 'label3' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.set_WindowText(String value)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at Speech_home.Form1.Client_PublishArrived(Object sender, PublishArrivedArgs e) in C:\Users\bibliotecar\source\repos\Speech_home\Speech_home\Form1.cs:line 101
+   at MqttLib.Mqtt.OnPublishArrived(MqttPublishMessage m) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Mqtt.cs:line 311
+01.06.2019 - 21:29:03 - [ERROR]MqttLib: Uncaught exception from user delegate: System.InvalidOperationException: Cross-thread operation not valid: Control 'label3' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.set_WindowText(String value)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at Speech_home.Form1.Client_PublishArrived(Object sender, PublishArrivedArgs e) in C:\Users\bibliotecar\source\repos\Speech_home\Speech_home\Form1.cs:line 101
+   at MqttLib.Mqtt.OnPublishArrived(MqttPublishMessage m) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Mqtt.cs:line 311
+01.06.2019 - 21:29:04 - [ERROR]MqttLib: Uncaught exception from user delegate: System.InvalidOperationException: Cross-thread operation not valid: Control 'label3' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.set_WindowText(String value)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at Speech_home.Form1.Client_PublishArrived(Object sender, PublishArrivedArgs e) in C:\Users\bibliotecar\source\repos\Speech_home\Speech_home\Form1.cs:line 101
+   at MqttLib.Mqtt.OnPublishArrived(MqttPublishMessage m) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Mqtt.cs:line 311
+01.06.2019 - 21:29:05 - [ERROR]MqttLib: Uncaught exception from user delegate: System.InvalidOperationException: Cross-thread operation not valid: Control 'label3' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.set_WindowText(String value)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at Speech_home.Form1.Client_PublishArrived(Object sender, PublishArrivedArgs e) in C:\Users\bibliotecar\source\repos\Speech_home\Speech_home\Form1.cs:line 101
+   at MqttLib.Mqtt.OnPublishArrived(MqttPublishMessage m) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Mqtt.cs:line 311
+01.06.2019 - 21:29:06 - [ERROR]MqttLib: Uncaught exception from user delegate: System.InvalidOperationException: Cross-thread operation not valid: Control 'label3' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.set_WindowText(String value)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at Speech_home.Form1.Client_PublishArrived(Object sender, PublishArrivedArgs e) in C:\Users\bibliotecar\source\repos\Speech_home\Speech_home\Form1.cs:line 101
+   at MqttLib.Mqtt.OnPublishArrived(MqttPublishMessage m) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Mqtt.cs:line 311
+01.06.2019 - 21:29:08 - [ERROR]MqttLib: Uncaught exception from user delegate: System.InvalidOperationException: Cross-thread operation not valid: Control 'label3' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.set_WindowText(String value)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at Speech_home.Form1.Client_PublishArrived(Object sender, PublishArrivedArgs e) in C:\Users\bibliotecar\source\repos\Speech_home\Speech_home\Form1.cs:line 101
+   at MqttLib.Mqtt.OnPublishArrived(MqttPublishMessage m) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Mqtt.cs:line 311
+01.06.2019 - 21:29:15 - [ERROR]MqttLib: Uncaught exception from user delegate: System.InvalidOperationException: Cross-thread operation not valid: Control 'label3' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.set_WindowText(String value)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at Speech_home.Form1.Client_PublishArrived(Object sender, PublishArrivedArgs e) in C:\Users\bibliotecar\source\repos\Speech_home\Speech_home\Form1.cs:line 101
+   at MqttLib.Mqtt.OnPublishArrived(MqttPublishMessage m) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Mqtt.cs:line 311
+01.06.2019 - 21:29:18 - [ERROR]MqttLib: Uncaught exception from user delegate: System.InvalidOperationException: Cross-thread operation not valid: Control 'label3' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.set_WindowText(String value)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at Speech_home.Form1.Client_PublishArrived(Object sender, PublishArrivedArgs e) in C:\Users\bibliotecar\source\repos\Speech_home\Speech_home\Form1.cs:line 101
+   at MqttLib.Mqtt.OnPublishArrived(MqttPublishMessage m) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Mqtt.cs:line 311
+#
+# Creating new log
+#
+01.06.2019 - 21:30:17 - [ERROR]MqttLib: Uncaught exception from user delegate: System.InvalidOperationException: Cross-thread operation not valid: Control 'label3' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.set_WindowText(String value)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at Speech_home.Form1.Client_PublishArrived(Object sender, PublishArrivedArgs e) in C:\Users\bibliotecar\source\repos\Speech_home\Speech_home\Form1.cs:line 101
+   at MqttLib.Mqtt.OnPublishArrived(MqttPublishMessage m) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Mqtt.cs:line 311
+01.06.2019 - 21:30:20 - [ERROR]MqttLib: Uncaught exception from user delegate: System.InvalidOperationException: Cross-thread operation not valid: Control 'label3' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.set_WindowText(String value)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at Speech_home.Form1.Client_PublishArrived(Object sender, PublishArrivedArgs e) in C:\Users\bibliotecar\source\repos\Speech_home\Speech_home\Form1.cs:line 101
+   at MqttLib.Mqtt.OnPublishArrived(MqttPublishMessage m) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Mqtt.cs:line 311
+01.06.2019 - 21:30:21 - [ERROR]MqttLib: Uncaught exception from user delegate: System.InvalidOperationException: Cross-thread operation not valid: Control 'label3' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.set_WindowText(String value)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at Speech_home.Form1.Client_PublishArrived(Object sender, PublishArrivedArgs e) in C:\Users\bibliotecar\source\repos\Speech_home\Speech_home\Form1.cs:line 101
+   at MqttLib.Mqtt.OnPublishArrived(MqttPublishMessage m) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Mqtt.cs:line 311
+01.06.2019 - 21:30:21 - [ERROR]MqttLib: Uncaught exception from user delegate: System.InvalidOperationException: Cross-thread operation not valid: Control 'label3' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.set_WindowText(String value)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at Speech_home.Form1.Client_PublishArrived(Object sender, PublishArrivedArgs e) in C:\Users\bibliotecar\source\repos\Speech_home\Speech_home\Form1.cs:line 101
+   at MqttLib.Mqtt.OnPublishArrived(MqttPublishMessage m) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Mqtt.cs:line 311
+01.06.2019 - 21:30:22 - [ERROR]MqttLib: Uncaught exception from user delegate: System.InvalidOperationException: Cross-thread operation not valid: Control 'label3' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.set_WindowText(String value)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at Speech_home.Form1.Client_PublishArrived(Object sender, PublishArrivedArgs e) in C:\Users\bibliotecar\source\repos\Speech_home\Speech_home\Form1.cs:line 101
+   at MqttLib.Mqtt.OnPublishArrived(MqttPublishMessage m) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Mqtt.cs:line 311
+01.06.2019 - 21:30:22 - [ERROR]MqttLib: Uncaught exception from user delegate: System.InvalidOperationException: Cross-thread operation not valid: Control 'label3' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.set_WindowText(String value)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at Speech_home.Form1.Client_PublishArrived(Object sender, PublishArrivedArgs e) in C:\Users\bibliotecar\source\repos\Speech_home\Speech_home\Form1.cs:line 101
+   at MqttLib.Mqtt.OnPublishArrived(MqttPublishMessage m) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Mqtt.cs:line 311
+#
+# Creating new log
+#
+01.06.2019 - 21:30:48 - [ERROR]MqttLib: Uncaught exception from user delegate: System.InvalidOperationException: Cross-thread operation not valid: Control 'label3' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.set_WindowText(String value)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at Speech_home.Form1.Client_PublishArrived(Object sender, PublishArrivedArgs e) in C:\Users\bibliotecar\source\repos\Speech_home\Speech_home\Form1.cs:line 101
+   at MqttLib.Mqtt.OnPublishArrived(MqttPublishMessage m) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Mqtt.cs:line 311
+#
+# Creating new log
+#
+01.06.2019 - 21:31:48 - [ERROR]MqttLib: Uncaught exception from user delegate: System.InvalidOperationException: Cross-thread operation not valid: Control 'label3' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.set_WindowText(String value)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at Speech_home.Form1.Client_PublishArrived(Object sender, PublishArrivedArgs e) in C:\Users\bibliotecar\source\repos\Speech_home\Speech_home\Form1.cs:line 101
+   at MqttLib.Mqtt.OnPublishArrived(MqttPublishMessage m) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Mqtt.cs:line 311
+01.06.2019 - 21:31:52 - [ERROR]MqttLib: Uncaught exception from user delegate: System.InvalidOperationException: Cross-thread operation not valid: Control 'label3' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.set_WindowText(String value)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at Speech_home.Form1.Client_PublishArrived(Object sender, PublishArrivedArgs e) in C:\Users\bibliotecar\source\repos\Speech_home\Speech_home\Form1.cs:line 101
+   at MqttLib.Mqtt.OnPublishArrived(MqttPublishMessage m) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Mqtt.cs:line 311
+01.06.2019 - 21:31:57 - [ERROR]MqttLib: Uncaught exception from user delegate: System.InvalidOperationException: Cross-thread operation not valid: Control 'label3' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.set_WindowText(String value)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at Speech_home.Form1.Client_PublishArrived(Object sender, PublishArrivedArgs e) in C:\Users\bibliotecar\source\repos\Speech_home\Speech_home\Form1.cs:line 101
+   at MqttLib.Mqtt.OnPublishArrived(MqttPublishMessage m) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Mqtt.cs:line 311
+01.06.2019 - 21:32:04 - [ERROR]MqttLib: Uncaught exception from user delegate: System.InvalidOperationException: Cross-thread operation not valid: Control 'label3' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.set_WindowText(String value)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at Speech_home.Form1.Client_PublishArrived(Object sender, PublishArrivedArgs e) in C:\Users\bibliotecar\source\repos\Speech_home\Speech_home\Form1.cs:line 101
+   at MqttLib.Mqtt.OnPublishArrived(MqttPublishMessage m) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Mqtt.cs:line 311
+#
+# Creating new log
+#
+01.06.2019 - 21:33:17 - [ERROR]MqttLib: Uncaught exception from user delegate: System.InvalidOperationException: Cross-thread operation not valid: Control 'label3' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.set_WindowText(String value)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at Speech_home.Form1.Client_PublishArrived(Object sender, PublishArrivedArgs e) in C:\Users\bibliotecar\source\repos\Speech_home\Speech_home\Form1.cs:line 101
+   at MqttLib.Mqtt.OnPublishArrived(MqttPublishMessage m) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Mqtt.cs:line 311
+01.06.2019 - 21:33:17 - [ERROR]System.IO.IOException: Unable to read data from the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение. ---> System.Net.Sockets.SocketException: Программа на вашем хост-компьютере разорвала установленное подключение
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at MqttLib.Core.Messages.MqttMessage.ReadCompleteBuffer(Stream str, Byte[] buffer) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Core\Messages\MqttMessage.cs:line 239
+   at MqttLib.Core.Messages.MqttMessage.ReadUshortFromStream(Stream str) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Core\Messages\MqttMessage.cs:line 221
+   at MqttLib.Core.Messages.MqttMessage.ReadStringFromStream(Stream str) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Core\Messages\MqttMessage.cs:line 227
+   at MqttLib.Core.Messages.MqttPublishMessage.ConstructFromStream(Stream str) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Core\Messages\MqttPublishMessage.cs:line 41
+   at MqttLib.Core.Messages.MqttMessage..ctor(Stream str, Byte header) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Core\Messages\MqttMessage.cs:line 99
+   at MqttLib.Core.Messages.MqttPublishMessage..ctor(Stream str, Byte header) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Core\Messages\MqttPublishMessage.cs:line 28
+   at MqttLib.Core.Messages.MessageFactory.CreateMessage(Stream str, Byte header) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Core\Messages\MessageFactory.cs:line 32
+   at MqttLib.Core.StreamManager.listen(IAsyncResult asyncResult) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Core\StreamManager.cs:line 98
+#
+# Creating new log
+#
+01.06.2019 - 21:35:50 - [ERROR]MqttLib: Uncaught exception from user delegate: System.InvalidOperationException: Cross-thread operation not valid: Control 'label3' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.set_WindowText(String value)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at Speech_home.Form1.Client_PublishArrived(Object sender, PublishArrivedArgs e) in C:\Users\bibliotecar\source\repos\Speech_home\Speech_home\Form1.cs:line 102
+   at MqttLib.Mqtt.OnPublishArrived(MqttPublishMessage m) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Mqtt.cs:line 311
+01.06.2019 - 21:35:51 - [ERROR]MqttLib: Uncaught exception from user delegate: System.InvalidOperationException: Cross-thread operation not valid: Control 'label3' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.set_WindowText(String value)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at Speech_home.Form1.Client_PublishArrived(Object sender, PublishArrivedArgs e) in C:\Users\bibliotecar\source\repos\Speech_home\Speech_home\Form1.cs:line 102
+   at MqttLib.Mqtt.OnPublishArrived(MqttPublishMessage m) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Mqtt.cs:line 311
+#
+# Creating new log
+#
+01.06.2019 - 21:37:30 - [ERROR]MqttLib: Uncaught exception from user delegate: System.InvalidOperationException: Cross-thread operation not valid: Control 'label3' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.set_WindowText(String value)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at Speech_home.Form1.Client_PublishArrived(Object sender, PublishArrivedArgs e) in C:\Users\bibliotecar\source\repos\Speech_home\Speech_home\Form1.cs:line 103
+   at MqttLib.Mqtt.OnPublishArrived(MqttPublishMessage m) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Mqtt.cs:line 311
+#
+# Creating new log
+#
+01.06.2019 - 21:38:09 - [ERROR]MqttLib: Uncaught exception from user delegate: System.InvalidOperationException: Cross-thread operation not valid: Control 'label3' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.set_WindowText(String value)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at Speech_home.Form1.Client_PublishArrived(Object sender, PublishArrivedArgs e) in C:\Users\bibliotecar\source\repos\Speech_home\Speech_home\Form1.cs:line 103
+   at MqttLib.Mqtt.OnPublishArrived(MqttPublishMessage m) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Mqtt.cs:line 311
+#
+# Creating new log
+#
+01.06.2019 - 21:40:22 - [ERROR]MqttLib: Uncaught exception from user delegate: System.InvalidOperationException: Cross-thread operation not valid: Control 'label3' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.set_WindowText(String value)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at Speech_home.Form1.Client_PublishArrived(Object sender, PublishArrivedArgs e) in C:\Users\bibliotecar\source\repos\Speech_home\Speech_home\Form1.cs:line 103
+   at MqttLib.Mqtt.OnPublishArrived(MqttPublishMessage m) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Mqtt.cs:line 311
+#
+# Creating new log
+#
+01.06.2019 - 21:41:06 - [ERROR]MqttLib: Uncaught exception from user delegate: System.InvalidOperationException: Cross-thread operation not valid: Control 'label3' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.set_WindowText(String value)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at Speech_home.Form1.Client_PublishArrived(Object sender, PublishArrivedArgs e) in C:\Users\bibliotecar\source\repos\Speech_home\Speech_home\Form1.cs:line 103
+   at MqttLib.Mqtt.OnPublishArrived(MqttPublishMessage m) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Mqtt.cs:line 311
+#
+# Creating new log
+#
+01.06.2019 - 21:42:10 - [ERROR]MqttLib: Uncaught exception from user delegate: System.InvalidOperationException: Cross-thread operation not valid: Control 'label3' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.set_WindowText(String value)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at Speech_home.Form1.Client_PublishArrived(Object sender, PublishArrivedArgs e) in C:\Users\bibliotecar\source\repos\Speech_home\Speech_home\Form1.cs:line 103
+   at MqttLib.Mqtt.OnPublishArrived(MqttPublishMessage m) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Mqtt.cs:line 311
+#
+# Creating new log
+#
+01.06.2019 - 21:44:11 - [ERROR]MqttLib: Uncaught exception from user delegate: System.InvalidOperationException: Cross-thread operation not valid: Control 'label3' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.set_WindowText(String value)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at Speech_home.Form1.Client_PublishArrived(Object sender, PublishArrivedArgs e) in C:\Users\bibliotecar\source\repos\Speech_home\Speech_home\Form1.cs:line 103
+   at MqttLib.Mqtt.OnPublishArrived(MqttPublishMessage m) in C:\Users\bibliotecar\Desktop\MqttDotNet-master\MqttLib\Mqtt.cs:line 311
+#
+# Creating new log
+#
+01.06.2019 - 21:44:48 - [ERROR]MqttLib: Uncaught exception from user delegate: System.InvalidOperationException: Cross-thread operation not valid: Control 'label3' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.set_WindowText(String value)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at Speech_home.Form1.Client_PublishArrived(Object sender, PublishArrivedArgs e) in C:\Users\bibliotecar\source\repos\Speech_home\Speech_home\Form1.cs:line 103
+   at MqttLib.Mqtt.OnPublishArrived(MqttPublishMessage m)
+#
+# Creating new log
+#
+01.06.2019 - 21:45:31 - [ERROR]MqttLib: Uncaught exception from user delegate: System.InvalidOperationException: Cross-thread operation not valid: Control 'checkBox1' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.SendMessage(Int32 msg, Int32 wparam, Int32 lparam)
+   at System.Windows.Forms.CheckBox.set_CheckState(CheckState value)
+   at System.Windows.Forms.CheckBox.set_Checked(Boolean value)
+   at Speech_home.Form1.Client_PublishArrived(Object sender, PublishArrivedArgs e) in C:\Users\bibliotecar\source\repos\Speech_home\Speech_home\Form1.cs:line 103
+   at MqttLib.Mqtt.OnPublishArrived(MqttPublishMessage m)
+#
+# Creating new log
+#
+01.06.2019 - 21:56:36 - [ERROR]MqttLib: Uncaught exception from user delegate: System.InvalidOperationException: Cross-thread operation not valid: Control 'label3' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.set_WindowText(String value)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at Speech_home.Form1.Client_PublishArrived(Object sender, PublishArrivedArgs e) in C:\Users\bibliotecar\source\repos\Speech_home\Speech_home\Form1.cs:line 104
+   at MqttLib.Mqtt.OnPublishArrived(MqttPublishMessage m)
+#
+# Creating new log
+#
+01.06.2019 - 22:01:25 - [ERROR]MqttLib: Uncaught exception from user delegate: System.InvalidOperationException: Cross-thread operation not valid: Control 'textBox1' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.set_WindowText(String value)
+   at System.Windows.Forms.TextBoxBase.set_WindowText(String value)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.TextBoxBase.set_Text(String value)
+   at System.Windows.Forms.TextBox.set_Text(String value)
+   at Speech_home.Form1.Client_PublishArrived(Object sender, PublishArrivedArgs e) in C:\Users\bibliotecar\source\repos\Speech_home\Speech_home\Form1.cs:line 104
+   at MqttLib.Mqtt.OnPublishArrived(MqttPublishMessage m)
+#
+# Creating new log
+#
+01.06.2019 - 22:10:06 - [ERROR]MqttLib: Uncaught exception from user delegate: System.InvalidOperationException: Cross-thread operation not valid: Control 'textBox1' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.TextBoxBase.GetSelectionStartAndLength(Int32& start, Int32& length)
+   at System.Windows.Forms.TextBoxBase.AppendText(String text)
+   at Speech_home.Form1.Client_PublishArrived(Object sender, PublishArrivedArgs e) in C:\Users\bibliotecar\source\repos\Speech_home\Speech_home\Form1.cs:line 106
+   at MqttLib.Mqtt.OnPublishArrived(MqttPublishMessage m)
+#
+# Creating new log
+#
+01.06.2019 - 22:15:05 - [ERROR]System.IO.IOException: Unable to read data from the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение. ---> System.Net.Sockets.SocketException: Программа на вашем хост-компьютере разорвала установленное подключение
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at MqttLib.Core.Messages.MqttMessage.ReadCompleteBuffer(Stream str, Byte[] buffer)
+   at MqttLib.Core.Messages.MqttMessage.ReadUshortFromStream(Stream str)
+   at MqttLib.Core.Messages.MqttMessage.ReadStringFromStream(Stream str)
+   at MqttLib.Core.Messages.MqttPublishMessage.ConstructFromStream(Stream str)
+   at MqttLib.Core.Messages.MqttMessage..ctor(Stream str, Byte header)
+   at MqttLib.Core.Messages.MqttPublishMessage..ctor(Stream str, Byte header)
+   at MqttLib.Core.Messages.MessageFactory.CreateMessage(Stream str, Byte header)
+   at MqttLib.Core.StreamManager.listen(IAsyncResult asyncResult)
+#
+# Creating new log
+#
+#
+# Creating new log
+#
+01.06.2019 - 22:19:15 - [ERROR]System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение. ---> System.Net.Sockets.SocketException: Программа на вашем хост-компьютере разорвала установленное подключение
+   at System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   at System.IO.MemoryStream.WriteTo(Stream stream)
+   at MqttLib.Core.Messages.MqttMessage.Serialise(Stream str)
+   at MqttLib.Core.StreamManager.SendMessage(MqttMessage mess)
+   at MqttLib.Mqtt.tmrCallback(Object args)
+01.06.2019 - 22:19:15 - [ERROR]System.IO.IOException: Unable to write data to the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение. ---> System.Net.Sockets.SocketException: Программа на вашем хост-компьютере разорвала установленное подключение
+   at System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   at System.IO.MemoryStream.WriteTo(Stream stream)
+   at MqttLib.Core.Messages.MqttMessage.Serialise(Stream str)
+   at MqttLib.Core.StreamManager.SendMessage(MqttMessage mess)
+   at MqttLib.Mqtt.tmrCallback(Object args)
+#
+# Creating new log
+#
+01.06.2019 - 22:19:50 - [ERROR]MqttLib: Uncaught exception from user delegate: System.InvalidOperationException: Cross-thread operation not valid: Control 'label3' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.Control.set_WindowText(String value)
+   at System.Windows.Forms.Control.set_Text(String value)
+   at System.Windows.Forms.Label.set_Text(String value)
+   at Speech_home.Form1.Client_PublishArrived(Object sender, PublishArrivedArgs e) in C:\Users\bibliotecar\source\repos\Speech_home\Speech_home\Form1.cs:line 93
+   at MqttLib.Mqtt.OnPublishArrived(MqttPublishMessage m)
+#
+# Creating new log
+#
+#
+# Creating new log
+#
+#
+# Creating new log
+#
+01.06.2019 - 22:37:45 - [ERROR]System.IO.IOException: Unable to read data from the transport connection: Программа на вашем хост-компьютере разорвала установленное подключение. ---> System.Net.Sockets.SocketException: Программа на вашем хост-компьютере разорвала установленное подключение
+   at System.Net.Sockets.Socket.BeginReceive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags, AsyncCallback callback, Object state)
+   at System.Net.Sockets.NetworkStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.BeginRead(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at MqttLib.Core.StreamManager.listen(IAsyncResult asyncResult)
